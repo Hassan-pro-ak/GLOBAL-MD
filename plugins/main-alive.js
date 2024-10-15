@@ -1,9 +1,9 @@
-/*let handler = async (m, { conn, text, usedPrefix, command }) => {
+let handler = async (m, { conn, text, usedPrefix, command }) => {
   // Sound
   let name = m.pushName || conn.getName(m.sender)
-  var vn = 'https://cdn.jsdelivr.net/gh/GlobalTechInfo/GLOBAL-MD@main/assets/qasim2.mp3'
-  let url = 'https://github.com/GlobalTechInfo/GLOBAL-MD'
-  let murl = 'https://youtu.be/oXQjl39Bl7M'
+  var vn = 'https://cdn.jsdelivr.net/gh/GlobalTechInfo/GLOBAL-MD@main/media/qasim2.mp3'
+  let url = 'https://github.com/Lazack28/Lazack-md'
+  let murl = 'https://youtu.be/3j_EIP--2t8?si=4TFWV0On6Bl1wr-e'
   let img = 'https://i.ibb.co/9HY4wjz/a4c0b1af253197d4837ff6760d5b81c0.jpg'
   let con = {
     key: {
@@ -25,13 +25,13 @@
     mimetype: 'audio/mpeg',
     ptt: true,
     waveform: [100, 0, 100, 0, 100, 0, 100],
-    fileName: 'qasim',
+    fileName: 'shizo',
 
     contextInfo: {
       mentionedJid: [m.sender],
       externalAdReply: {
         title: 'GLOBAL MD IS ALIVE',
-        body: '© GlobalTechInfo',
+        body: 'Global Md',
         thumbnailUrl: img,
         sourceUrl: 'https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07',
         mediaType: 1,
@@ -47,4 +47,4 @@ handler.help = ['alive']
 handler.tags = ['main']
 handler.command = /^(alive)$/i
 
-export default handler*/
+export default handler

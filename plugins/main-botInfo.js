@@ -50,8 +50,8 @@ let handler = async (m, { conn, usedPrefix, command }) => {
       : m.fromMe
         ? conn.user.jid
         : m.sender
-  if (!(who in global.db.data.users)) throw `✳️ The user is not found in my database`
-  let pp = await conn.profilePictureUrl(who, 'image').catch(_ => './assets/qasim.jpg')
+  if (!(who in global.db.data.users)) throw `The user is not found in my database`
+  let pp = await conn.profilePictureUrl(who, 'image').catch(_ => './media/qasim.jpg')
   let user = global.db.data.users[who]
 
   let infobt = `
@@ -65,21 +65,20 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 ▢ *${chats.length}* Total Chats
 
 *≡ OWNER*
-  *QASIM*
 ▢ Instagram :
   • https://instagram.com/global.techinfo
 ▢ GitHub :
-  • https://github.com/GlobalTechInfo
-▢ Telegram : 
-  • https://t.me/GlobalBotInc 
+  • https://github.com/Lazack28 
 ▢ YouTube : 
   • https://youtube.com/@GlobalTechInfo
+▢ credit: 
+  • mr oreo
 
  *≡ S E R V E R*
 *🛑 RAM:* ${format(totalmem() - freemem())} / ${format(totalmem())}
 *🔵 FreeRAM:* ${format(freemem())}
 
-*≡  NodeJS memory *
+*≡  NodeJS memory*
 ${
   '```' +
   Object.keys(used)

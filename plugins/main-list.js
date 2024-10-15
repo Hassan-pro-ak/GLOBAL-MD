@@ -46,17 +46,17 @@ let handler = async (m, { conn, usedPrefix, command }) => {
         '🧲 *' +
         usedPrefix +
         'logomenu* - Create a logo that screams You.\n\n' +
-        '🎴 *' +
+        '🎴*' +
         usedPrefix +
         'nsfwmenu* - The After Dark menu.\n\n' +
-        '🌀 *' +
+        '🌀*' +
         usedPrefix +
         'aimenu* - Your Personal Artificial Intelligence Copilots.'
       break
 
     case 'botmenu':
       lkr = `
-┌───『 *Bot* 』
+╭───『 *Bot* 』
 ◈ .quran
 ◈ .bible
 ◈ .gita
@@ -65,45 +65,42 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 ◈ .alive
 ◈ .anticall
 ◈ .chatbot
+◈ .bot
 ◈ .owner
 ◈ .script
 ◈ .test
 ◈ .runtime
 ◈ .infobot
-◈ .list
-◈ .menu
-◈ .menu2
-◈ .menu3
 ◈ .mrcs
 ◈ .bebots
 ◈ .jadibot
+◈ .serbot
 ◈ .donate
 ◈ .groups
 ◈ .blocklist
 ◈ .listprem
 ◈ © GlobalTechInfo
-╰────────❍` // Your bot menu message here
+╰─────────❍` // Your bot menu message here
       break
       case 'aimenu':
       lkr=`
- ┌───『 *AI* 』
+ ╭───『 *AI* 』
  ◈ .lexica
  ◈ .chatgpt
  ◈ .gitagpt
  ◈ .gptpro
  ◈ .gpt4
- ◈ .bing
  ◈ .civitai
  ◈ .blackpink
- ◈ .bingimage
+ ◈ .image
  ◈ .dalle
  ◈ .bro
  ◈ .ai
- ╰────────❍` //
+ ╰─────────❍` //
  break
     case 'ownermenu':
       lkr = `
-┌───『 *Owner* 』
+╭───『 *Owner* 』
 ◈ .enable
 ◈ .disable
 ◈ .banchat
@@ -114,6 +111,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 ◈ .broadcastgc
 ◈ .readviewonce
 ◈ .setprivacy
+◈ .getprivacy
 ◈ .join
 ◈ .setppbot
 ◈ .setprefix
@@ -146,13 +144,14 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 ◈ .ban
 ◈ .afk
 ◈ .save
+◈ .update
 ◈ .allow
 ◈ .listban
-╰────────❍` //
+╰─────────❍` //
       break
     case 'groupmenu':
       lkr = `
-┌───『 *Group* 』
+╭───『 *Group* 』
 ◈ .kick
 ◈ .promote
 ◈ .demote
@@ -186,14 +185,15 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 ◈ .poll
 ◈ .simulate
 ◈ .admins
-╰────────❍` //
+╰─────────❍` //
       break
     case 'downloadermenu':
     case 'dlmenu':
       lkr = `
-┌───『 *Download* 』
+╭───『 *Download* 』
 ◈ .video
 ◈ .itunes
+◈ .play
 ◈ .play2
 ◈ .play3
 ◈ .apk
@@ -210,17 +210,17 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 ◈ .gitclone 
 ◈ .twitter
 ◈ .tiktok
-◈ .tiktokstalk
 ◈ .insta
 ◈ .igstalk
+◈ .spotify
 ◈ .facebook
 ◈ .swdl
 ◈ .dlstatus
-╰────────❍` //
+╰─────────❍` //
       break
     case 'economymenu':
       lkr = `
-┌───『 *Economy* 』
+╭───『 *Economy* 』
 ◈ .claim/daily
 ◈ .weekly
 ◈ .monthly
@@ -242,7 +242,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
       break
     case 'funmenu':
       lkr = `
-┌───『 *Fun* 』
+╭───『 *Fun* 』
 ◈ .character
 ◈ .truth
 ◈ .dare
@@ -257,11 +257,11 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 ◈ .ytcomment
 ◈ .stupid
 ◈ .lolicon
-╰────────❍` //
+╰─────────❍` //
       break
     case 'animemenu':
       lkr = `
-┌───『 *Anime* 』
+╭───『 *Anime* 』
 ◈ .waifu
 ◈ .neko
 ◈ .loli
@@ -299,11 +299,11 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 ◈ .sasuke
 ◈ .sakura
 ◈ .kotori
-╰────────❍` //
+╰─────────❍` //
       break
     case 'gamemenu':
       lkr = `
-┌───『 *Game* 』
+╭───『 *Game* 』
 ◈ .tictactoe
 ◈ .delttt
 ◈ .chess
@@ -314,11 +314,11 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 ◈ .casino
 ◈ .guessflag
 ◈ .fhint
-╰────────❍` //
+╰─────────❍` //
       break
     case 'stickermenu':
       lkr = `
-┌───『 *Sticker* 』
+╭───『 *Sticker* 』
 ◈ .sticker
 ◈ .take
 ◈ .scircle
@@ -335,11 +335,11 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 ◈ .attp
 ◈ .attp2
 ◈ .attp3
-╰────────❍` //
+╰─────────❍` //
       break
     case 'toolmenu':
       lkr = `
-┌───『 *Tools* 』
+╭───『 *Tools* 』
 ◈ .autosticker
 ◈ .tgsticker
 ◈ .topdf
@@ -362,8 +362,9 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 ◈ .trace
 ◈ .wikipedia
 ◈ .nowa
-◈ .qrcode
+◈ .qrmaker
 ◈ .readqr
+◈ .fancy
 ◈ .weather
 ◈ .tocartoon
 ◈ .quote
@@ -377,11 +378,11 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 ◈ .true
 ◈ .wa
 ◈ .voz
-╰────────❍` //
+╰─────────❍` //
 break
 case 'aeditor':
 lkr=`
-┌───『 *Audio* 』
+╭───『 *Audio* 』
 ◈ .bass
 ◈ .blown
 ◈ .deep
@@ -395,11 +396,11 @@ lkr=`
 ◈ .tupai
 ◈ .squirrel
 ◈ .chipmunk
-╰────────❍` //
+╰─────────❍` //
       break
     case 'nsfwmenu': 
       lkr = `
-  ┌───『 *Nsfw* 』
+  ╭───『 *Nsfw* 』
   ◈ .genshin
   ◈ .swimsuit
   ◈ .schoolswimsuit
@@ -480,11 +481,11 @@ lkr=`
   ◈ .pack
   ◈ .xvid
   ◈ .xnxx
-  ╰────────❍` //
+  ╰─────────❍` //
       break
     case 'logomenu':
       lkr = `
-  ┌───『 *Maker* 』
+  ╭───『 *Maker* 』
   ◈ .blur
   ◈ .difuminar2
   ◈ .hornycard
@@ -508,7 +509,7 @@ lkr=`
   ◈ .tweet <comment>
   ◈ .lolicon
   ◈ .ytcomment <comment>
-  ╰────────❍` //
+  ╰─────────❍` //
       break
     default:
       lkr = `Invalid command. Type ${usedPrefix}list to see available options.`

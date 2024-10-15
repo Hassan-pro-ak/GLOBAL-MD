@@ -1,4 +1,4 @@
-/*import { bitly } from '@whiskeysockets/baileys';
+/*import { bitly } from '@shizodevs/wabotmodule';
 
 let handler = async (m, { conn, args }) => {
   try {
@@ -10,7 +10,7 @@ let handler = async (m, { conn, args }) => {
     await conn.sendFile(m.chat, qrCode, 'qrcode.png', `Successfuly Shorted Your Link ✅
 🏴‍☠️ *Original Link:* ${longURL}
 🧟‍♂️ *Shorted Link:* ` + shortURL + `
-📢 *Powered by:* GlobalTechInfo
+📢 *Powered by:* Bit.ly
 👨‍🎓 *Developer:* ${author}`, m);
   } catch (error) {
     console.error(error);
@@ -21,4 +21,5 @@ handler.help = ['shortlink <longLink>', 'bitly <longlink>'];
 handler.tags = ['tools'];
 handler.command = /^(shortlink|bitly)$/i;
 
-export default handler;*/
+export default handler;
+*/

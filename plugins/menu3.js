@@ -1,28 +1,28 @@
+
 let handler = async function (m, { conn, text, usedPrefix }) {
-  let m2 = `≡ Use these commands without the prefix: *${usedPrefix}*
+  
+let m2 = `
+≡ Use these commands without the prefix: *${usedPrefix}*
 ┌─⊷ *AUDIOS* 
 ▢ Bot
 ▢ Good morning
 ▢ Good afternoon
 ▢ Good evening
 ▢ Fine gentlemen
-▢ Don't be Sad
-└──────────────`;
-  
-  let pp = './assets/qasim.jpg';
-
-  // Send a button message
-  await conn.sendButton(m.chat, m2, 'GLOBAL-MD', pp, [
-    ['⏍ InfoBot', `${usedPrefix}botinfo`],
-    ['⌬ Support', `${usedPrefix}groups`]
-  ], m, { quoted: m });
-
-  // Send an image file
-  await conn.sendFile(m.chat, pp, 'menu.jpg', m2, m);
+▢ Dont be Sad
+└──────────────
+`
+    let pp = './assests/qasim.jpg' 
+    conn.sendButton(m.chat, m2, mssg.ig, pp, [
+      ['⏍ Info', `${usedPrefix}botinfo`],
+      ['⌬ Grupos', `${usedPrefix}grp`]
+    ],m, rpyt)
+    conn.sendFile(m.chat, pp, 'menu.jpg', m2, m, null, rpl)
+   
 }
 
-handler.help = ['menu3'];
-handler.tags = ['main'];
-handler.command = ['menu3', 'audios'];
+handler.help = ['menu3']
+handler.tags = ['main']
+handler.command = ['menu3', 'audios'] 
 
-export default handler;
+export default handler

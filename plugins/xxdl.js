@@ -58,4 +58,5 @@ handler.group = true
 handler.premium = false
 handler.register = true
 
-export default handler */
+export default handler
+*/
